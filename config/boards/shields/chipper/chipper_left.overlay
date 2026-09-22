@@ -1,0 +1,11 @@
+#include "chipper.dtsi"
+
+&kscan0 {
+    col-gpios =
+        <&gpio0 10 GPIO_ACTIVE_HIGH>,
+        <&gpio1 15 GPIO_ACTIVE_HIGH>,
+        <&gpio1 14 GPIO_ACTIVE_HIGH>,
+        <&gpio1 13 GPIO_ACTIVE_HIGH>,
+        <&gpio1 12 GPIO_ACTIVE_HIGH>,
+        <&gpio1 11 GPIO_ACTIVE_HIGH>;
+};

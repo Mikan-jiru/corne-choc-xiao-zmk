@@ -1,0 +1,19 @@
+#include "chipper.dtsi"
+
+&default_transform {
+    col-offset = <6>;
+};
+
+&five_column_transform {
+    col-offset = <6>;
+};
+
+&kscan0 {
+    col-gpios =
+        <&gpio1 11 GPIO_ACTIVE_HIGH>,
+        <&gpio1 12 GPIO_ACTIVE_HIGH>,
+        <&gpio1 13 GPIO_ACTIVE_HIGH>,
+        <&gpio1 14 GPIO_ACTIVE_HIGH>,
+        <&gpio1 15 GPIO_ACTIVE_HIGH>,
+        <&gpio0 10 GPIO_ACTIVE_HIGH>;
+};

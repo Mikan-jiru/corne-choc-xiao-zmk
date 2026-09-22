@@ -22,5 +22,6 @@ Before flashing:
 2. Build both halves.
 3. Flash the left UF2 to the left XIAO Sense and the right UF2 to the right XIAO Sense.
 4. If the physical board uses the opposite diode orientation, do not flash this build as-is; the matrix definition must be changed to the corresponding row2col configuration.
+test
 
 The supplied repository also contained older display configurations and prebuilt firmware. Those are intentionally not copied here.

@@ -4,7 +4,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define COMBO_TIMEOUT 60
-
 #define DEFAULT 0
 #define LOWER 1
 #define RAISE 2
@@ -20,6 +19,83 @@
                 = <&macro_tap_time 10>
                 ,<&macro_tap &kp H &kp E &kp L &kp L &kp O>
                 ;
+        };
+
+        jis_ro: jis_ro {
+            display-name = "JIS RO";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp INT_RO>;
+        };
+
+        jyen: jyen {
+            display-name = "JYEN";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp INT_YEN>;
+        };
+
+        jis_kana: jis_kana {
+            display-name = "JIS KANA";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp INT_KANA>;
+        };
+
+        jis_henkan: jis_henkan {
+            display-name = "JIS HENKAN";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp INT_HENKAN>;
+        };
+
+        jis_muhenkan: jis_muhenkan {
+            display-name = "JIS MUHENKAN";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp INT_MUHENKAN>;
+        };
+
+        jis_kpcomma: jis_kpcomma {
+            display-name = "JIS KP COMMA";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp INT_KPJPCOMMA>;
+        };
+
+        lang1_key: lang1_key {
+            display-name = "LANG1";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LANG1>;
+        };
+
+        lang2_key: lang2_key {
+            display-name = "LANG2";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LANG2>;
+        };
+
+        lang3_key: lang3_key {
+            display-name = "LANG3";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LANG3>;
+        };
+
+        lang4_key: lang4_key {
+            display-name = "LANG4";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LANG4>;
+        };
+
+        lang5_key: lang5_key {
+            display-name = "LANG5";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LANG5>;
         };
     };
 };
